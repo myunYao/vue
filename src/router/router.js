@@ -5,6 +5,7 @@ import Home from '../views/Home.vue'
 export default [
   {
     path: '/',
+    // 通过name进行命名
     name: 'home',
     component: Home
   },
