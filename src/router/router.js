@@ -20,5 +20,16 @@ export default [
     // name 动态路由参数
     path: '/argu/:name',
     component: () => import('@/views/argu.vue')
+  },
+  {
+    path: '/parent',
+    component: () => import('@/views/parent.vue'),
+    children: [
+      {
+        //   子路由不需要写 /
+        path: 'child',
+        component: () => import('@/views/child.vue')
+      }
+    ]
   }
 ]
