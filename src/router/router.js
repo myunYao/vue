@@ -28,6 +28,11 @@ export default [
     component: () => import('@/views/count-to.vue')
   },
   {
+    path: '/form',
+    name: 'form',
+    component: () => import('@/views/form.vue')
+  },
+  {
     path: '/parent',
     component: () => import('@/views/parent.vue'),
     children: [
